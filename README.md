@@ -11,13 +11,16 @@
   <a href="https://github.com/jtincovalverde/ReservaFlow">
     <img src="https://img.shields.io/badge/Featured%20Project-ReservaFlow-1f6feb?style=for-the-badge&logo=github" alt="ReservaFlow">
   </a>
+  <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim">
+    <img src="https://img.shields.io/badge/Simulation-MRP%20II%20%26%20FlexSim-2F6FED?style=for-the-badge" alt="MRP II and FlexSim">
+  </a>
 </p>
 
 ## About me
 
 I'm interested in combining **technology, process improvement, operations, and artificial intelligence** to build practical solutions for real business problems.
 
-I completed **CS50x: Introduction to Computer Science** and developed **ReservaFlow**, a full-stack reservation management web application, as my final project. I am continuing to build a public portfolio that connects software, data, AI, operations, and business decision-making.
+I completed **CS50x: Introduction to Computer Science** and developed **ReservaFlow**, a full-stack reservation management web application, as my final project. I am continuing to build a public portfolio that connects software, data, AI, operations, simulation, and business decision-making.
 
 - 🎓 **CS50x completed** — Harvard / CS50
 - 💻 Building with **Python, Flask, SQL, JavaScript, HTML, CSS, and Bootstrap**
@@ -25,7 +28,7 @@ I completed **CS50x: Introduction to Computer Science** and developed **ReservaF
 - 📊 Interested in **process optimization, capacity planning, KPIs, MRP II, simulation, and business systems**
 - 📍 Peru
 
-## Featured project
+## Featured projects
 
 ### ReservaFlow
 
@@ -38,7 +41,15 @@ Key capabilities include authentication, reservation CRUD, dashboard metrics, se
   <a href="https://www.youtube.com/watch?v=mBzinlOeNAw"><strong>Watch video demo →</strong></a>
 </p>
 
-## Portfolio labs & case studies
+### MetalMueble MRP II — FlexSim 2027
+
+A manufacturing-capacity and discrete-event simulation case study that combines **MRP II, FlexSim 2027, FlexScript, Python, queues, capacity analysis, bottleneck identification, and KPI validation**.
+
+The public repository includes the FlexSim launcher, V23 model-building script, capacity dataset, Python validation utilities, case-study documentation, and GitHub Actions static validation. The academic group context is explicitly disclosed in the repository.
+
+[View repository →](https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim)
+
+## Portfolio labs
 
 ### Operations KPI Dashboard
 
@@ -56,15 +67,7 @@ A synthetic six-month demand forecasting project using trend and seasonal featur
 
 [View project →](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/demand-forecasting-demo)
 
-### MRP II & FlexSim Manufacturing Case Study
-
-An attributed academic **group case study** covering production-capacity analysis, bottleneck identification, capacity alternatives, MRP II, and the role of FlexSim in dynamic manufacturing analysis.
-
-**MRP II · FlexSim · Capacity Planning · Bottlenecks · Industrial Engineering**
-
-[View case study →](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/mrp2-flexsim-case-study)
-
-> The portfolio lab datasets are synthetic and the lab projects were created with AI-assisted development. The MRP II/FlexSim page is explicitly attributed as group work and does not claim sole authorship. ReservaFlow contains its own CS50x AI-assistance disclosure.
+> The portfolio lab datasets are synthetic and the lab projects were created with AI-assisted development. The MetalMueble repository is explicitly attributed as academic group work and does not claim sole authorship of every element. ReservaFlow contains its own CS50x AI-assistance disclosure.
 
 ## Technologies
 
@@ -78,6 +81,7 @@ An attributed academic **group case study** covering production-capacity analysi
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/FlexSim-2027-2F6FED?style=flat-square" alt="FlexSim 2027">
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
 </p>
 
@@ -93,21 +97,22 @@ Completed in **2026**.
 
 - ✅ Completed **CS50x 2026**
 - 🚀 Built and published **ReservaFlow** as a Flask web application
-- 🧪 Added **GitHub Actions CI** to validate ReservaFlow and portfolio lab scripts
+- 🏭 Published a dedicated **MRP II & FlexSim 2027 manufacturing simulation** repository
+- 🧪 Added **GitHub Actions CI** for static validation of portfolio code and simulation-package structure
 - 📊 Added an **operations KPI and capacity-analysis** portfolio lab
 - 📈 Added a **demand forecasting** portfolio lab
-- 🏭 Added an attributed **MRP II & FlexSim manufacturing case study**
 - 🌐 Built a responsive personal portfolio website in `docs/`
 
 ## Current focus
 
-I'm continuing to build projects that strengthen my skills in **software development, artificial intelligence, automation, data, operations, and business process improvement**.
+I'm continuing to build projects that strengthen my skills in **software development, artificial intelligence, automation, data, operations, simulation, and business process improvement**.
 
 ---
 
 <p align="center">
   <a href="https://github.com/jtincovalverde">GitHub</a> ·
   <a href="https://github.com/jtincovalverde/ReservaFlow">ReservaFlow</a> ·
+  <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim">MetalMueble FlexSim</a> ·
   <a href="https://github.com/jtincovalverde/jtincovalverde/tree/main/docs">Portfolio Website Source</a> ·
   <a href="https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305">CS50x Certificate</a>
 </p>
