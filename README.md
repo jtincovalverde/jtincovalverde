@@ -68,12 +68,12 @@ Completed in **2026**.
 
 [Verify certificate](https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305)
 
-## GitHub activity
+## Highlights
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=jtincovalverde&show_icons=true&hide_border=true" alt="Jemerson's GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jtincovalverde&layout=compact&hide_border=true" alt="Top languages">
-</p>
+- ✅ Completed **CS50x 2026**
+- 🚀 Built and published **ReservaFlow** as a complete Flask web application
+- 🧠 Continuing to develop skills in **AI, automation, data, and software engineering**
+- 📈 Building a public portfolio focused on practical, real-world projects
 
 ## Current focus
 
