@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<rect width="1200" height="300" rx="26" fill="#0b0f14"/>
+<text x="60" y="58" font-family="Arial" font-size="30" font-weight="700" fill="#eef3f8">Manufacturing Flow</text>
+<text x="60" y="92" font-family="Arial" font-size="15" fill="#9aa8b7">MRP II case study · Metal chair production route</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="60" y="145" width="160" height="74" rx="16" fill="#111821" stroke="#334155" stroke-width="2"/><text x="140" y="190" font-size="17" fill="#eef3f8">Raw Material</text>
+<rect x="275" y="145" width="150" height="74" rx="16" fill="#111821" stroke="#5aa7ff" stroke-width="2"/><text x="350" y="190" font-size="17" fill="#eef3f8">Cutting</text>
+<rect x="480" y="145" width="150" height="74" rx="16" fill="#111821" stroke="#f59e0b" stroke-width="3"/><text x="555" y="180" font-size="17" fill="#eef3f8">Welding</text><text x="555" y="204" font-size="12" fill="#fbbf24">Bottleneck</text>
+<rect x="685" y="145" width="150" height="74" rx="16" fill="#111821" stroke="#5aa7ff" stroke-width="2"/><text x="760" y="190" font-size="17" fill="#eef3f8">Assembly</text>
+<rect x="890" y="145" width="150" height="74" rx="16" fill="#111821" stroke="#8a7cff" stroke-width="2"/><text x="965" y="190" font-size="17" fill="#eef3f8">Finishing</text>
+<rect x="1070" y="145" width="90" height="74" rx="16" fill="#111821" stroke="#22c55e" stroke-width="2"/><text x="1115" y="178" font-size="14" fill="#eef3f8">Finished</text><text x="1115" y="198" font-size="14" fill="#eef3f8">Product</text>
+</g>
+<g stroke="#64748b" stroke-width="4" fill="#64748b">
+<line x1="220" y1="182" x2="275" y2="182"/><polygon points="266,174 281,182 266,190"/>
+<line x1="425" y1="182" x2="480" y2="182"/><polygon points="471,174 486,182 471,190"/>
+<line x1="630" y1="182" x2="685" y2="182"/><polygon points="676,174 691,182 676,190"/>
+<line x1="835" y1="182" x2="890" y2="182"/><polygon points="881,174 896,182 881,190"/>
+<line x1="1040" y1="182" x2="1070" y2="182"/><polygon points="1061,174 1076,182 1061,190"/>
+</g>
+</svg>
