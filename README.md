@@ -22,7 +22,7 @@ I completed **CS50x: Introduction to Computer Science** and developed **ReservaF
 - 🎓 **CS50x completed** — Harvard / CS50
 - 💻 Building with **Python, Flask, SQL, JavaScript, HTML, CSS, and Bootstrap**
 - 🤖 Developing practical skills in **AI, forecasting, automation, and data analysis**
-- 📊 Interested in **process optimization, capacity planning, KPIs, operations, and business systems**
+- 📊 Interested in **process optimization, capacity planning, KPIs, MRP II, simulation, and business systems**
 - 📍 Peru
 
 ## Featured project
@@ -31,14 +31,14 @@ I completed **CS50x: Introduction to Computer Science** and developed **ReservaF
 
 A reservation management web application built with **Python, Flask, SQLite, Jinja, Bootstrap, CSS, and JavaScript**.
 
-Key capabilities include authentication, reservation CRUD, dashboard metrics, search, status filters, scheduling-conflict prevention, past-date validation, and user-level authorization.
+Key capabilities include authentication, reservation CRUD, dashboard metrics, search, status filters, scheduling-conflict prevention, past-date validation, user-level authorization, an architecture diagram, and automated Python CI.
 
 <p>
   <a href="https://github.com/jtincovalverde/ReservaFlow"><strong>View repository →</strong></a><br>
   <a href="https://www.youtube.com/watch?v=mBzinlOeNAw"><strong>Watch video demo →</strong></a>
 </p>
 
-## Portfolio labs
+## Portfolio labs & case studies
 
 ### Operations KPI Dashboard
 
@@ -56,7 +56,15 @@ A synthetic six-month demand forecasting project using trend and seasonal featur
 
 [View project →](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/demand-forecasting-demo)
 
-> The portfolio lab datasets are synthetic, and these lab projects were created with AI-assisted development. ReservaFlow contains its own CS50x AI-assistance disclosure.
+### MRP II & FlexSim Manufacturing Case Study
+
+An attributed academic **group case study** covering production-capacity analysis, bottleneck identification, capacity alternatives, MRP II, and the role of FlexSim in dynamic manufacturing analysis.
+
+**MRP II · FlexSim · Capacity Planning · Bottlenecks · Industrial Engineering**
+
+[View case study →](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/mrp2-flexsim-case-study)
+
+> The portfolio lab datasets are synthetic and the lab projects were created with AI-assisted development. The MRP II/FlexSim page is explicitly attributed as group work and does not claim sole authorship. ReservaFlow contains its own CS50x AI-assistance disclosure.
 
 ## Technologies
 
@@ -85,10 +93,11 @@ Completed in **2026**.
 
 - ✅ Completed **CS50x 2026**
 - 🚀 Built and published **ReservaFlow** as a Flask web application
+- 🧪 Added **GitHub Actions CI** to validate ReservaFlow and portfolio lab scripts
 - 📊 Added an **operations KPI and capacity-analysis** portfolio lab
 - 📈 Added a **demand forecasting** portfolio lab
-- 🌐 Built the source for a responsive personal portfolio website in `docs/`
-- 🧠 Continuing to develop skills in **AI, automation, data, and software engineering**
+- 🏭 Added an attributed **MRP II & FlexSim manufacturing case study**
+- 🌐 Built a responsive personal portfolio website in `docs/`
 
 ## Current focus
 
