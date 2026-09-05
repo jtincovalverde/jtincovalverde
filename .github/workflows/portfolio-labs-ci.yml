@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas matplotlib numpy scikit-learn
 
-      - name: Run operations KPI analysis
+      - name: Run operations management control center
         run: python projects/operations-kpi-dashboard/analyze.py
 
       - name: Run demand forecasting demo
