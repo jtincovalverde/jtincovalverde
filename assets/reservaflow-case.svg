@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">ReservaFlow operations case study</title>
+  <desc id="desc">Visual summary of ReservaFlow as an operations system for reservation management.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0f1f35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#48b7ff"/>
+      <stop offset="1" stop-color="#7c7cff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" rx="34" fill="url(#bg)"/>
+  <circle cx="1080" cy="80" r="180" fill="#2a64ff" opacity="0.07"/>
+  <circle cx="120" cy="560" r="170" fill="#6a5cff" opacity="0.06"/>
+
+  <text x="64" y="72" fill="#75c9ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">OPERATIONS SYSTEM · FEATURED PROJECT</text>
+  <text x="64" y="122" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800">ReservaFlow</text>
+  <text x="64" y="156" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20">Turning scattered bookings into a structured operating workflow.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="198" width="752" height="352" rx="24" fill="#0d1827" stroke="#27415f"/>
+    <rect x="64" y="198" width="752" height="52" rx="24" fill="#111f31"/>
+    <circle cx="94" cy="224" r="6" fill="#ff6b6b"/>
+    <circle cx="116" cy="224" r="6" fill="#ffd166"/>
+    <circle cx="138" cy="224" r="6" fill="#5fd38d"/>
+    <text x="172" y="230" fill="#dce8f7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">ReservaFlow · Operations Dashboard</text>
+
+    <rect x="88" y="276" width="154" height="88" rx="16" fill="#12243a" stroke="#294968"/>
+    <text x="106" y="302" fill="#8fa6c2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">RESERVATIONS</text>
+    <text x="106" y="338" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Centralized</text>
+
+    <rect x="258" y="276" width="154" height="88" rx="16" fill="#12243a" stroke="#294968"/>
+    <text x="276" y="302" fill="#8fa6c2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">SCHEDULING</text>
+    <text x="276" y="338" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Validated</text>
+
+    <rect x="428" y="276" width="154" height="88" rx="16" fill="#12243a" stroke="#294968"/>
+    <text x="446" y="302" fill="#8fa6c2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">VISIBILITY</text>
+    <text x="446" y="338" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Live KPIs</text>
+
+    <rect x="598" y="276" width="194" height="88" rx="16" fill="#12243a" stroke="#294968"/>
+    <text x="616" y="302" fill="#8fa6c2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">CONTROL</text>
+    <text x="616" y="338" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">User-scoped</text>
+
+    <rect x="88" y="388" width="704" height="136" rx="18" fill="#0b1624" stroke="#223d58"/>
+    <text x="110" y="418" fill="#7fc8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">RESERVATION WORKFLOW</text>
+
+    <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">
+      <rect x="110" y="444" width="132" height="48" rx="12" fill="#162a42"/>
+      <text x="176" y="474" text-anchor="middle" fill="#eef6ff">Capture</text>
+      <text x="254" y="474" fill="#5e7691">→</text>
+
+      <rect x="280" y="444" width="132" height="48" rx="12" fill="#162a42"/>
+      <text x="346" y="474" text-anchor="middle" fill="#eef6ff">Validate</text>
+      <text x="424" y="474" fill="#5e7691">→</text>
+
+      <rect x="450" y="444" width="132" height="48" rx="12" fill="#162a42"/>
+      <text x="516" y="474" text-anchor="middle" fill="#eef6ff">Schedule</text>
+      <text x="594" y="474" fill="#5e7691">→</text>
+
+      <rect x="620" y="444" width="150" height="48" rx="12" fill="url(#accent)"/>
+      <text x="695" y="474" text-anchor="middle" fill="#07111f">Track & Decide</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="860" y="224" fill="#75c9ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">MANAGEMENT VALUE</text>
+
+    <text x="860" y="272" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="800">Less manual friction</text>
+    <text x="860" y="298" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">One structured workflow instead of</text>
+    <text x="860" y="320" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">scattered notes, chats and sheets.</text>
+
+    <text x="860" y="370" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="800">Better operational control</text>
+    <text x="860" y="396" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Search, filters, conflict checks and</text>
+    <text x="860" y="418" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">status visibility support faster decisions.</text>
+
+    <text x="860" y="468" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="800">Technology with a purpose</text>
+    <text x="860" y="494" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Python · Flask · SQLite · JavaScript</text>
+    <text x="860" y="516" fill="#9fb1c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Bootstrap · GitHub Actions</text>
+  </g>
+
+  <rect x="64" y="580" width="1072" height="1" fill="#233b55"/>
+  <text x="64" y="606" fill="#7f94ad" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">Administration × Operations × Process Optimization × Technology</text>
+</svg>
