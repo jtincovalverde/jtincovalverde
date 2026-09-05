@@ -42,17 +42,9 @@ I do not see administration as simply supervising what already exists. I am inte
 
 ### ReservaFlow · From scattered bookings to an operating system
 
-<p align="center">
-  <a href="https://github.com/jtincovalverde/ReservaFlow">
-    <img src="./assets/reservaflow-case.svg" alt="ReservaFlow operations system case study" width="92%" />
-  </a>
-</p>
-
-**Operational problem:** Reservations handled through disconnected messages, notes or spreadsheets create friction, duplication and weak visibility.
-
-**What I built:** A full-stack reservation management application with authentication, CRUD workflows, dashboard metrics, search, filters, conflict prevention, validation and user-level authorization.
-
-**Management value:** It turns a repetitive administrative workflow into a structured digital process with better visibility and control.
+| **Operational problem** | **What I built** | **Management value** |
+| --- | --- | --- |
+| Reservations spread across messages, notes or spreadsheets create duplication, weak visibility and avoidable errors. | A full-stack reservation system with authentication, CRUD workflows, dashboard metrics, search, filters, conflict prevention and validation. | A repetitive administrative workflow becomes a structured digital process with better control, faster information access and fewer manual steps. |
 
 **Stack:** Python · Flask · SQLite · JavaScript · Bootstrap · GitHub Actions
 
