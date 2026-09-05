@@ -14,6 +14,7 @@
 <p align="center">
   <a href="https://github.com/jtincovalverde/ReservaFlow"><img src="https://img.shields.io/badge/Featured-ReservaFlow-1f6feb?style=for-the-badge&logo=github" alt="ReservaFlow"></a>
   <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim"><img src="https://img.shields.io/badge/Operations-MRP%20II%20%2B%20FlexSim-7c3aed?style=for-the-badge" alt="MRP II + FlexSim"></a>
+  <a href="https://github.com/jtincovalverde/operations-management-control-center"><img src="https://img.shields.io/badge/Decision%20Support-Operations%20Control%20Center-0ea5e9?style=for-the-badge" alt="Operations Management Control Center"></a>
   <a href="https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305"><img src="https://img.shields.io/badge/Harvard-CS50x%20Completed-A51C30?style=for-the-badge" alt="CS50x completed"></a>
 </p>
 
@@ -78,7 +79,7 @@ A focused **+12 h capacity scenario in Welding** removes the immediate overload 
 
 **Tools:** Python · Pandas · Matplotlib · KPI design · Capacity planning · Scenario analysis · Decision support
 
-[**View project →**](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/operations-kpi-dashboard) · [**Read executive summary →**](https://github.com/jtincovalverde/jtincovalverde/blob/main/projects/operations-kpi-dashboard/executive_summary.md)
+[**View repository →**](https://github.com/jtincovalverde/operations-management-control-center) · [**Read executive summary →**](https://github.com/jtincovalverde/operations-management-control-center/blob/main/executive_summary.md)
 
 ---
 
@@ -154,6 +155,7 @@ Completed in **2026** through Harvard / CS50. ReservaFlow was developed as the f
 <p align="center">
   <a href="https://github.com/jtincovalverde/ReservaFlow">ReservaFlow</a> ·
   <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim">MetalMueble</a> ·
+  <a href="https://github.com/jtincovalverde/operations-management-control-center">Operations Control Center</a> ·
   <a href="https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305">CS50x Certificate</a>
 </p>
 
