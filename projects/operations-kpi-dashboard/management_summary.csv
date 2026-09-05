@@ -1,0 +1,5 @@
+work_center,required_hours,available_hours,capacity_gap,utilization_pct,risk,management_action
+Cutting,42.5,64.0,21.5,66.4,HEALTHY,"Maintain buffer and evaluate whether spare capacity can support constrained areas."
+Welding,71.8,60.0,-11.8,119.7,CRITICAL,"Add targeted capacity, overtime, or rebalance work if skills allow."
+Assembly,56.2,68.0,11.8,82.6,HEALTHY,"Maintain buffer and evaluate whether spare capacity can support constrained areas."
+Finishing,49.6,62.0,12.4,80.0,HEALTHY,"Maintain buffer and evaluate whether spare capacity can support constrained areas."
