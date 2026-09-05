@@ -64,24 +64,25 @@ The model helps answer a management question that appears in many operations: **
 
 [**View repository →**](https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim)
 
+### Operations Management Control Center · Turn capacity data into a decision
+
+**Management question:** Does the operation really need more capacity everywhere, or is the pressure concentrated in one work center?
+
+| Required workload | Available capacity | Overall utilization | Bottleneck | Local gap |
+| ---: | ---: | ---: | --- | ---: |
+| **220.1 h** | **254.0 h** | **86.7%** | **Welding** | **-11.8 h** |
+
+The analysis shows a useful management lesson: **aggregate capacity is sufficient, but one local constraint can still limit the operation.** Instead of recommending more resources everywhere, the project identifies the bottleneck, classifies risk and tests a targeted scenario.
+
+A focused **+12 h capacity scenario in Welding** removes the immediate overload and reduces local utilization from **119.7% to 99.7%**. The result also shows why management should protect a resilience buffer rather than operate permanently at the limit.
+
+**Tools:** Python · Pandas · Matplotlib · KPI design · Capacity planning · Scenario analysis · Decision support
+
+[**View project →**](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/operations-kpi-dashboard) · [**Read executive summary →**](https://github.com/jtincovalverde/jtincovalverde/blob/main/projects/operations-kpi-dashboard/executive_summary.md)
+
 ---
 
-## Operations & analytics labs
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 📊 Operations KPI Dashboard
-
-Synthetic manufacturing-capacity analysis focused on **workload, available capacity, utilization, capacity gaps and bottlenecks**.
-
-`Python` `Pandas` `Matplotlib` `KPIs` `Operations`
-
-[**View project →**](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/operations-kpi-dashboard)
-
-</td>
-<td width="50%" valign="top">
+## Analytics lab
 
 ### 📈 Demand Forecasting Demo
 
@@ -90,10 +91,6 @@ Six-month demand forecasting lab using **trend and seasonal features, linear reg
 `Python` `scikit-learn` `Pandas` `Forecasting` `Data`
 
 [**View project →**](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/demand-forecasting-demo)
-
-</td>
-</tr>
-</table>
 
 ---
 
