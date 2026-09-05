@@ -15,6 +15,7 @@
   <a href="https://github.com/jtincovalverde/ReservaFlow"><img src="https://img.shields.io/badge/Featured-ReservaFlow-1f6feb?style=for-the-badge&logo=github" alt="ReservaFlow"></a>
   <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim"><img src="https://img.shields.io/badge/Operations-MRP%20II%20%2B%20FlexSim-7c3aed?style=for-the-badge" alt="MRP II + FlexSim"></a>
   <a href="https://github.com/jtincovalverde/operations-management-control-center"><img src="https://img.shields.io/badge/Decision%20Support-Operations%20Control%20Center-0ea5e9?style=for-the-badge" alt="Operations Management Control Center"></a>
+  <a href="https://github.com/jtincovalverde/demand-capacity-planning"><img src="https://img.shields.io/badge/Planning-Demand%20%26%20Capacity-16a34a?style=for-the-badge" alt="Demand & Capacity Planning"></a>
   <a href="https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305"><img src="https://img.shields.io/badge/Harvard-CS50x%20Completed-A51C30?style=for-the-badge" alt="CS50x completed"></a>
 </p>
 
@@ -81,17 +82,21 @@ A focused **+12 h capacity scenario in Welding** removes the immediate overload 
 
 [**View repository →**](https://github.com/jtincovalverde/operations-management-control-center) · [**Read executive summary →**](https://github.com/jtincovalverde/operations-management-control-center/blob/main/executive_summary.md)
 
----
+### Demand & Capacity Planning · Forecast demand, then decide how much capacity to prepare
 
-## Analytics lab
+**Management question:** How much demand should the operation prepare for over the next six months, and does the forecast justify permanent capacity?
 
-### 📈 Demand Forecasting Demo
+| Current capacity | Peak forecast | Months above capacity | Peak gap | Recommended response |
+| ---: | ---: | ---: | ---: | --- |
+| **270 units/month** | **279 units** | **1 of 6** | **-18 labor h** | **Flexible capacity first** |
 
-Six-month demand forecasting lab using **trend and seasonal features, linear regression, holdout validation and MAE**.
+The project combines demand forecasting with operating assumptions so the result becomes a management decision rather than only a prediction. It validates the model, builds low/base/high scenarios, translates demand into labor hours, classifies capacity risk and recommends whether the operation should use flexible capacity or consider permanent hiring.
 
-`Python` `scikit-learn` `Pandas` `Forecasting` `Data`
+The base case exceeds current capacity in only one month, so the analysis recommends **targeted overtime or another flexible-capacity option before adding permanent headcount**.
 
-[**View project →**](https://github.com/jtincovalverde/jtincovalverde/tree/main/projects/demand-forecasting-demo)
+**Tools:** Python · Pandas · NumPy · scikit-learn · Matplotlib · Forecasting · Capacity planning · Staffing decision support
+
+[**View repository →**](https://github.com/jtincovalverde/demand-capacity-planning) · [**Read executive plan →**](https://github.com/jtincovalverde/demand-capacity-planning/blob/main/executive_plan.md)
 
 ---
 
@@ -156,7 +161,8 @@ Completed in **2026** through Harvard / CS50. ReservaFlow was developed as the f
   <a href="https://github.com/jtincovalverde/ReservaFlow">ReservaFlow</a> ·
   <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim">MetalMueble</a> ·
   <a href="https://github.com/jtincovalverde/operations-management-control-center">Operations Control Center</a> ·
+  <a href="https://github.com/jtincovalverde/demand-capacity-planning">Demand &amp; Capacity Planning</a> ·
   <a href="https://cs50.harvard.edu/certificates/33971312-603f-44b5-ae8c-69c073080305">CS50x Certificate</a>
 </p>
 
-<sub>Portfolio lab datasets are synthetic. AI-assisted development is disclosed where applicable. The MetalMueble repository explicitly identifies its academic group-work context; ReservaFlow contains its own CS50x AI-assistance disclosure.</sub>
+<sub>Portfolio datasets and planning assumptions are synthetic where stated. AI-assisted development is disclosed where applicable. The MetalMueble repository explicitly identifies its academic group-work context; ReservaFlow contains its own CS50x AI-assistance disclosure.</sub>
