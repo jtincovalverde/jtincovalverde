@@ -42,35 +42,28 @@ I do not see administration as simply supervising what already exists. I am inte
 
 ### ReservaFlow · From scattered bookings to an operating system
 
-<table>
-<tr>
-<td width="55%">
-  <img src="https://raw.githubusercontent.com/jtincovalverde/ReservaFlow/main/assets/reservations.png" alt="ReservaFlow reservations interface" width="100%">
-</td>
-<td width="45%" valign="top">
+<p align="center">
+  <a href="https://github.com/jtincovalverde/ReservaFlow">
+    <img src="./assets/reservaflow-case.svg" alt="ReservaFlow operations system case study" width="92%" />
+  </a>
+</p>
 
-**Operational problem**  
-Reservations handled through disconnected messages, notes or spreadsheets create friction, duplication and weak visibility.
+**Operational problem:** Reservations handled through disconnected messages, notes or spreadsheets create friction, duplication and weak visibility.
 
-**What I built**  
-A full-stack reservation management application with authentication, CRUD workflows, dashboard metrics, search, filters, conflict prevention, validation and user-level authorization.
+**What I built:** A full-stack reservation management application with authentication, CRUD workflows, dashboard metrics, search, filters, conflict prevention, validation and user-level authorization.
 
-**Why it matters**  
-It transforms a repetitive administrative workflow into a structured digital process.
+**Management value:** It turns a repetitive administrative workflow into a structured digital process with better visibility and control.
 
 **Stack:** Python · Flask · SQLite · JavaScript · Bootstrap · GitHub Actions
 
-[**View repository →**](https://github.com/jtincovalverde/ReservaFlow)  
-[**Watch video demo →**](https://www.youtube.com/watch?v=mBzinlOeNAw)
-
-</td>
-</tr>
-</table>
+[**View repository →**](https://github.com/jtincovalverde/ReservaFlow) · [**Watch video demo →**](https://www.youtube.com/watch?v=mBzinlOeNAw)
 
 ### MetalMueble · Find the constraint before adding resources
 
 <p align="center">
-  <img src="./assets/metalmueble-case.svg" alt="MetalMueble MRP II and FlexSim case study" width="92%" />
+  <a href="https://github.com/jtincovalverde/MetalMueble-MRP-II-FlexSim">
+    <img src="./assets/metalmueble-case.svg" alt="MetalMueble MRP II and FlexSim case study" width="92%" />
+  </a>
 </p>
 
 A manufacturing-capacity and discrete-event simulation case study combining **MRP II, FlexSim 2027, FlexScript, Python, queues, capacity analysis and KPI validation**.
