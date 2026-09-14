@@ -1,0 +1,1 @@
+Bahamonde CRM release trigger after fixing missing closing brace in boot().
