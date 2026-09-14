@@ -29,23 +29,47 @@ jobs:
         with:
           enablement: true
 
-      - name: Build Bahamonde CRM static page
+      - name: Build Bahamonde CRM static pages
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --silent --show-error --location \
-            "https://dasheilkvbzaoqyzeicc.supabase.co/functions/v1/bahamonde?k=bahamonde-crm-2026&build=${GITHUB_SHA}" \
-            --output docs/bahamonde-crm/index.html
+          mkdir -p docs/bahamonde-crm docs/crm-bahamonde
+
+          CRM_URL="https://dasheilkvbzaoqyzeicc.supabase.co/functions/v1/bahamonde?k=bahamonde-crm-2026&build=${GITHUB_SHA}"
+
+          curl --fail --silent --show-error --location "$CRM_URL" --output /tmp/bahamonde-index.html
+
           python - <<'PY'
           from pathlib import Path
-          p = Path('docs/bahamonde-crm/index.html')
-          html = p.read_text(encoding='utf-8')
+          import re
+          src = Path('/tmp/bahamonde-index.html')
+          html = src.read_text(encoding='utf-8')
           if '<!doctype html' not in html.lower() or '</html>' not in html.lower():
               raise SystemExit('Bahamonde CRM release is not valid HTML')
-          import re
           html = re.sub(r'<link\s+rel=["\']manifest["\'][^>]*>', '<link rel="manifest" href="./manifest.webmanifest">', html, count=1, flags=re.I)
-          p.write_text(html, encoding='utf-8')
+          # Make the deployed page explicitly network-first and prevent legacy SW code from re-registering.
+          html = html.replace('navigator.serviceWorker.register("./sw.js")', 'Promise.resolve()')
+          html = html.replace("navigator.serviceWorker.register('./sw.js')", 'Promise.resolve()')
+          for folder in ('docs/bahamonde-crm', 'docs/crm-bahamonde'):
+              Path(folder).mkdir(parents=True, exist_ok=True)
+              Path(folder, 'index.html').write_text(html, encoding='utf-8')
           PY
+
+          cp docs/bahamonde-crm/manifest.webmanifest docs/crm-bahamonde/manifest.webmanifest
+          cp docs/bahamonde-crm/icon.svg docs/crm-bahamonde/icon.svg
+          cat > docs/crm-bahamonde/sw.js <<'EOF'
+          self.addEventListener('install', event => self.skipWaiting());
+          self.addEventListener('activate', event => event.waitUntil((async()=>{
+            const keys = await caches.keys();
+            await Promise.all(keys.map(k => caches.delete(k)));
+            await self.clients.claim();
+          })()));
+          self.addEventListener('fetch', event => {
+            if (event.request.mode === 'navigate') {
+              event.respondWith(fetch(event.request, {cache:'no-store'}).catch(()=>caches.match(event.request)));
+            }
+          });
+          EOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
