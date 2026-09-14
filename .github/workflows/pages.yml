@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -62,8 +62,6 @@ jobs:
               count=1,
               flags=re.I,
           )
-
-          # Do not depend on jsDelivr at runtime. Ship the exact Supabase client with the app.
           html = re.sub(
               r'<script\s+src=["\']https://cdn\.jsdelivr\.net/npm/@supabase/supabase-js@2\.57\.4/dist/umd/supabase\.min\.js["\']\s*></script>',
               '<script src="./supabase.min.js"></script>',
@@ -71,19 +69,19 @@ jobs:
               count=1,
               flags=re.I,
           )
-
-          # Prevent any legacy service worker registration from interfering with updates.
           html = html.replace('navigator.serviceWorker.register("./sw.js")', 'Promise.resolve()')
           html = html.replace("navigator.serviceWorker.register('./sw.js')", 'Promise.resolve()')
 
-          # Make failures visible instead of silently returning to login.
+          # Extract the main inline application script for syntax validation with Node.
+          scripts = re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>', html, flags=re.I|re.S)
+          app_scripts = [s for s in scripts if 'signInWithPassword' in s or 'function boot' in s]
+          if not app_scripts:
+              raise SystemExit('Could not locate Bahamonde CRM application script')
+          Path('/tmp/bahamonde-app.js').write_text(app_scripts[-1], encoding='utf-8')
+
           probe = '''<script>
-          window.addEventListener('error', function(e){
-            console.error('Bahamonde CRM runtime error:', e.error || e.message);
-          });
-          window.addEventListener('unhandledrejection', function(e){
-            console.error('Bahamonde CRM promise error:', e.reason);
-          });
+          window.addEventListener('error', function(e){console.error('Bahamonde CRM runtime error:', e.error || e.message);});
+          window.addEventListener('unhandledrejection', function(e){console.error('Bahamonde CRM promise error:', e.reason);});
           </script>'''
           html = html.replace('</head>', probe + '</head>', 1)
 
@@ -94,10 +92,12 @@ jobs:
               (out / 'supabase.min.js').write_bytes(Path('/tmp/supabase.min.js').read_bytes())
           PY
 
+          echo "Checking CRM application JavaScript syntax..."
+          node --check /tmp/bahamonde-app.js
+
           cp docs/bahamonde-crm/manifest.webmanifest docs/crm-bahamonde/manifest.webmanifest
           cp docs/bahamonde-crm/icon.svg docs/crm-bahamonde/icon.svg
 
-          # Verify the built HTML references the local auth client and still contains CRM auth logic.
           grep -q '<script src="./supabase.min.js"></script>' docs/crm-bahamonde/index.html
           grep -q 'signInWithPassword' docs/crm-bahamonde/index.html
           test -s docs/crm-bahamonde/supabase.min.js
