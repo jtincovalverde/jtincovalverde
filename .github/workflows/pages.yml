@@ -23,14 +23,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
+
+      - name: Build Bahamonde CRM static page
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location \
+            "https://dasheilkvbzaoqyzeicc.supabase.co/functions/v1/bahamonde?k=bahamonde-crm-2026&build=${GITHUB_SHA}" \
+            --output docs/bahamonde-crm/index.html
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('docs/bahamonde-crm/index.html')
+          html = p.read_text(encoding='utf-8')
+          if '<!doctype html' not in html.lower() or '</html>' not in html.lower():
+              raise SystemExit('Bahamonde CRM release is not valid HTML')
+          import re
+          html = re.sub(r'<link\s+rel=["\']manifest["\'][^>]*>', '<link rel="manifest" href="./manifest.webmanifest">', html, count=1, flags=re.I)
+          p.write_text(html, encoding='utf-8')
+          PY
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
