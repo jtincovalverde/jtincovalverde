@@ -1,0 +1,3 @@
+Bahamonde CRM release: v14-creator-credit
+Published: 2026-09-14
+Changes: removed sales automatic banner; added developer credit for Jemerson Jaime Tinco Valverde.
